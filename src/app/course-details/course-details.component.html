@@ -1,0 +1,24 @@
+<div class="container" style="padding-top: 80px;">
+<div *ngIf="course">
+
+  <button class="btn btn-danger" [routerLink]="['/course']">返回</button>
+
+      <p>{{ course.content }}</p>
+      <h4>{{ course.name }}</h4>
+      <p>{{ course.text }}</p>
+      <p>程式檔案下載：<a href="{{ course.pgd }}">程式</a></p>
+
+      <h4>教學影片連結：</h4>
+      <div *ngIf="course.videourl[1].length >= 2; else lengthe">
+          <div class="row row-cols-3 center">
+            <div class="col" *ngFor="let i of course.videourl">
+            <iframe width="100%" height="250" [src]="i | safe"> frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <ng-template #lengthe>
+        <iframe width="500" height="300" [src]="course.videourl | safe"> frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </ng-template>
+
+</div>
+</div>

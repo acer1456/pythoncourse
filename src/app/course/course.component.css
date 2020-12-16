@@ -45,7 +45,8 @@ img {
 @media only screen and (max-width: 590px) {
   .filter{
     filter:drop-shadow(0px 0px 10px rgba(0,0,0,.5)) ;
-    background: url("https://github.com/acer1456/pythoncourse/blob/gh-pages/assets/Python%20%E5%AE%89%E8%A3%9D%E8%88%87%E5%B7%A5%E4%BD%9C%E7%92%B0%E5%A2%83.png") center center no-repeat;
+    /* background: url("/../assets/Python 安裝與工作環境.png") center center no-repeat; */
+    background: url("https://github.com/acer1456/pythoncourse/blob/gh-pages/assets/Python%20%E5%AE%89%E8%A3%9D%E8%88%87%E5%B7%A5%E4%BD%9C%E7%92%B0%E5%A2%83.png?raw=true") center center no-repeat;
     height:100%;
   }
 }

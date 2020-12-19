@@ -4,41 +4,44 @@
     <div class="modal-content">
 
       <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">{{course.name}}</h4>
+      <div class="modal-header" style="background-color: rgb(0, 110, 201); color: white;">
+        <h5 class="modal-title">{{course.name}}</h5>
         <button type="button" class="close" (click)="hideModal()">&times;</button>
       </div>
 
       <!-- Modal body -->
-      <div class="modal-body" >
+      <div class="modal-body" id='modal-body'>
 
         <!-- <p>{{ course.content }}</p> -->
-        <p>{{ course.text }}</p>
-        <p>程式檔案下載：<a href="{{ course.pgd }}">程式</a></p>
-        <span *ngIf="course.pgdex.length > 0;">
-          <p>程式範例下載：<a href="{{ course.pgdex }}">範例檔案</a></p>
-        </span>
-
-        <h4>教學影片連結：</h4>
+        <p *ngIf="course.text.length > 0;">{{ course.text }}</p>
+        <a *ngIf="course.pgd.length > 0;" class="btn btn-danger" href="{{ course.pgd }}">程式範例</a>
+        <span *ngIf="course.pgdex.length > 0;"> 、 <a class="btn btn-success" href="{{ course.pgdex }}">範例檔案</a></span>
+        <br><br>
         <div *ngIf="course.videourl[1].length >= 2; else lengthe">
+        <!-- <h4>教學影片連結：</h4> -->
             <div class="row row-cols-3 center">
               <div class="col" *ngFor="let i of course.videourl">
               <iframe width="100%" height="250" [src]="i | safe"> frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </div>
+
         <ng-template #lengthe>
+          <!-- <h4>教學影片連結：</h4> -->
           <iframe width="500" height="300" [src]="course.videourl | safe"> frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </ng-template>
 
       </div>
 
-      <!-- Modal footer -->
-      <!-- <div class="modal-footer"> -->
-        <!-- <button type="button" class="btn btn-primary" (click)="sendModal()" >Send</button>
-        <button type="button" class="btn btn-danger" (click)="hideModal()">Close</button> -->
-        <button type="button" id="close-modal" data-dismiss="modal" style="display: none">Close</button>
-      <!-- </div> -->
+        <!-- Modal footer -->
+        <a href="https://piazza.com/class/kes3tr63npau8">
+          <div class="modal-footer" style="background-color: rgb(0, 110, 201); color: white;">
+            <p class="mr-auto" style="text-align: center;">登入Piazza查看討論區</p>
+            <!-- <button type="button" class="btn btn-primary" (click)="sendModal()" >Send</button> -->
+            <!-- <button type="button" class="btn btn-danger" (click)="hideModal()">Close</button> -->
+            <button type="button" id="close-modal" data-dismiss="modal" style="display: none">Close</button>
+          </div>
+        </a>
     </div>
   </div>
 </div>

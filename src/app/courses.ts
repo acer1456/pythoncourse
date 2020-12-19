@@ -92,13 +92,15 @@ export const courses = [
     content: '（資料）',
     text: 'Regular Expression 主要的功能是針對很長的string 進行文字解析，為文本分析的必要工具。安裝了 python, anaconda 後便會自動安裝 Regular Expression (re)，毋須另行安裝。Regualar Expression 經常配合 Beautiful soup 使用，擴大文字解析功能。要注意的是 Regular Expression 本是針對英文字串(string)而設計，英文字與字間有空白隔開，中文沒有。執行的結果略有差異。',
     videourl: 'https://www.youtube.com/embed/mWYdrc-Je3o',
-    pgd: 'https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Fi91z715dpjc6y0%2F29b886b368462368dd0411cb63c53e5a709014bed5cecf7335e6144d752aac97%2F7_Py_Regular_Expression.ipynb'
+    pgd: 'https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Fi91z715dpjc6y0%2F29b886b368462368dd0411cb63c53e5a709014bed5cecf7335e6144d752aac97%2F7_Py_Regular_Expression.ipynb',
+    pgdex:''
   },
   {
     id: 10,
     group: '文字處理',
     name: '索引與搜尋檢索',
     content: '（文字處理）',
+    videourl: ''
   },
   {
     id: 11,
@@ -156,7 +158,11 @@ export const courses = [
     id: 16,
     group: '機器學習',
     name: '監督學習：分類',
-    content: '（機器學習）'
+    content: '（機器學習）',
+    text: '「機械學習」簡單地說，簡單地說，就是從過去的經驗學習，亦即先給電腦一些已知的資料，讓電腦找出一些規則，或建立模型，接著才可以用在預測未知資料之上。當然，模型建的好不好，自然就很重要了，有一些指標可以衡量模型建的好不好，例如誤差的平方和，或預測的準確率等。從已知的資料建立模型，一點也不陌生，例如統計的迴歸分析就是這樣的應用。給定已知的觀察值，裡面有自變數、有依變數，就可以建立迴歸模型，我們可以計算可解釋百分比，亦即 R 平方，也可以看係數是否等零，自變數是否顯著，也可以給定自變數，預測依變數的大小。機械學習也是一樣，先給電腦一些已知的資料(依變數、自變數)，藉由演算法建構模型，自變數就可推估依變數。如果依變數是類別變數，例如正面或負面，此時稱為標記（label）。我們可以檢測模型預測標記的準確率。基本的做法是將已知資料分為「訓練集」與「測試集」兩組，訓練組的資料，用來建立模型。建立模型的方法有許多，今天的學習包會介紹十種建立模型的演算法，模型建立後套用在測試集，就可以檢查正確率了。正確率愈高的模型， 代表模型愈好。',
+    videourl: 'https://www.youtube.com/embed/aWJYX99ItfI',
+    pgd: 'https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Fi91z715dpjc6y0%2Ff263501bbe71daddfea18ebc5a279fd510f8b3a3d9ecdfb54c962d2117cdc270%2F13_Py_plot_classifier_comparison.ipynb',
+    pgdex:'',
   },
   {
     id: 17,
@@ -168,7 +174,11 @@ export const courses = [
     id: 18,
     group: '機器學習',
     name: '情感分析',
-    content: '（機器學習）'
+    content: '（機器學習）',
+    text: '「情感分析」是分類的應用。也是將已知資料分為「訓練集」與「測試集」兩組。這兩組資料都要有情感標記，例如本例中的 P 與 N。訓練組資料數量要夠多、品質要夠好，沒有標記錯誤、而且要有代表性，方能提高準確率。多個類別的的分類，例如 P N M 亦可進行，同學可以自己試試看。',
+    videourl: 'https://www.youtube.com/embed/pfzhwmqXJZA',
+    pgd: 'https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Fi91z715dpjc6y0%2F0815e5eadff1a410e192193f5bee8d42262b9096d1e77ffc4aa320ac521679ff%2F13_Py______sklearn.ipynb',
+    pgdex: ['https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Fi91z715dpjc6y0%2F0e6da4ce1f2547bbb3d4febba5cb9907e6fec91ab6d38fcd6e3843bbb9dae6aa%2Fsentiment_P_N.xlsx', 'https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Fi91z715dpjc6y0%2F8e61f7e23a1436c74790cf18b66472476455d68e1c695bc0860c3b3348aae860%2Ftest_pos_neg.xlsx']
   },
 ];
 

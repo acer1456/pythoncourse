@@ -60,7 +60,9 @@ export class CourseComponent implements OnInit {
     // script.src = `http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js`;
     // this.renderer.appendChild(document.head, script);
     // $(document).ready(function(e) {
-      $('img[usemap]').rwdImageMaps();
+      $('img[usemap]').ready(() => {
+        $('img[usemap]').rwdImageMaps();
+      });
     // });
   }
 

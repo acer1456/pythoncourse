@@ -35,6 +35,15 @@ export class ModalComponent implements OnInit {
   //   this.hideModal();
   // }
   hideModal():void {
-    document.getElementById('close-modal').click();
+    // document.getElementById('close-modal').click();
+    // $('.modal').ready(() => {
+      $("#close-modal").click();
+    //   $("#modal-body").html("");
+    //   this.course = '';
+    // });
+    // $(".modal").on("hidden.bs.modal", function(){
+    //   $("#modal-body").html("");
+    //   this.course = '';
+    // });
   }
 }

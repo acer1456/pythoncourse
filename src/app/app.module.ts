@@ -11,6 +11,7 @@ import { CourseDetailsComponent } from './course-details/course-details.componen
 import { SafePipe } from './course-details/safepipe';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 
+
 @NgModule({
   declarations: [
     AppComponent,

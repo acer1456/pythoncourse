@@ -1,10 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, AfterViewInit, OnChanges, Renderer2 } from '@angular/core';
 import { courses } from '../courses';
 import { ModalService } from '../modal.service';
 
-
+declare var jquery:any; // 這邊用 var
+declare let $:any; // 當然 let 也可以
 // This lets me use jquery
 // declare var $: any;
+// declare let $: any;
 
 @Component({
   selector: 'app-course',
@@ -13,7 +15,9 @@ import { ModalService } from '../modal.service';
 })
 export class CourseComponent implements OnInit {
   courses = courses
-  netImage:any = "../assets/Python 安裝與工作環境 (1).png";
+  // netImage:any = "../assets/Python 安裝與工作環境.png";
+  netImage:any = "../assets/done.png";
+
 
   onDragEnded(event) {
     let element = event.source.getRootElement();
@@ -34,15 +38,30 @@ export class CourseComponent implements OnInit {
   }
 
   constructor(
-    private modalService: ModalService
-    ) {}
+    private modalService: ModalService,
+    // private renderer: Renderer2
+    ) {
+    }
 
   getCourse( gcourses ){
     this.modalService.getTabVal( gcourses )
   }
 
-  ngOnInit(): void {
+  // ngAfterViewInit(): void {
+  //   $('img[usemap]').rwdImageMaps();
+  // }
 
+  // ngOnChanges(): void {
+  //   $('img[usemap]').rwdImageMaps();
+  // }
+
+  ngOnInit(): void {
+    // const script = this.renderer.createElement('script');
+    // script.src = `http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js`;
+    // this.renderer.appendChild(document.head, script);
+    // $(document).ready(function(e) {
+      $('img[usemap]').rwdImageMaps();
+    // });
   }
 
 }

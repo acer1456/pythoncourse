@@ -991,7 +991,7 @@ class CourseComponent {
         this.modalService = modalService;
         this.courses = _courses__WEBPACK_IMPORTED_MODULE_1__["courses"];
         // netImage:any = "../assets/Python 安裝與工作環境.png";
-        this.netImage = "../assets/done.png";
+        this.netImage = "https://raw.githubusercontent.com/acer1456/pythoncourse/gh-pages/assets/done.png";
     }
     onDragEnded(event) {
         let element = event.source.getRootElement();

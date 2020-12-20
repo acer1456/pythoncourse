@@ -68,9 +68,9 @@ const courses = [
         group: 2,
         name: 'Numpy運算邏輯',
         content: '（共用模組）',
-        text: 'Numpy 是處理 Array的常用模組。安裝 Anaconda 後就會自動安裝 numpy, 不需另行安裝。Array 即一串數字，可有多層級，適合矩陣運算，Numpy 提供方便的建置工具，亦可由List 轉換為 array。Numpy 有各種針對Array的數學計算功能，補強 python list 的不足，例如平均值、變異數或矩陣運算等。',
+        text: 'Numpy是處理Array的常用模組。安裝 Anaconda 後就會自動安裝 numpy, 不需另行安裝。Array 即一串數字，可有多層級，適合矩陣運算，Numpy 提供方便的建置工具，亦可由List 轉換為 array。Numpy 有各種針對Array的數學計算功能，補強 python list 的不足，例如平均值、變異數或矩陣運算等。',
         videourl: ['https://www.youtube.com/embed/ShhwiqqR6c8', 'https://www.youtube.com/embed/rgHZJJqPW1c'],
-        pdg: 'https://piazza.com/redirect/s3?bucket=uploads&prefix=attach%2Fjlrqtgi8cpaej%2Fi91z715dpjc6y0%2Fk1t2m2n1r48x%2F4_Py_numpy_basic.ipynb',
+        pgd: 'https://piazza.com/redirect/s3?bucket=uploads&prefix=attach%2Fjlrqtgi8cpaej%2Fi91z715dpjc6y0%2Fk1t2m2n1r48x%2F4_Py_numpy_basic.ipynb',
         pgdex: '',
     },
     {
@@ -124,7 +124,10 @@ const courses = [
         group: '文字處理',
         name: '索引與搜尋檢索',
         content: '（文字處理）',
-        videourl: ''
+        text: '',
+        videourl: '',
+        pgd: '',
+        pgdex: '',
     },
     {
         id: 11,
@@ -702,7 +705,7 @@ class ModalComponent {
     }
 }
 ModalComponent.ɵfac = function ModalComponent_Factory(t) { return new (t || ModalComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_modal_service__WEBPACK_IMPORTED_MODULE_2__["ModalService"])); };
-ModalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ModalComponent, selectors: [["app-modal"]], decls: 23, vars: 6, consts: [["id", "myModal", 1, "modal", "fade"], [1, "modal-dialog", "modal-xl"], [1, "modal-content"], [1, "modal-header", 2, "background-color", "rgb(0, 110, 201)", "color", "white"], [1, "modal-title"], ["type", "button", 1, "close", 3, "click"], ["id", "modal-body", 1, "modal-body"], [4, "ngIf"], ["class", "btn btn-danger", 3, "href", 4, "ngIf"], [4, "ngIf", "ngIfElse"], ["lengthe", ""], ["href", "https://piazza.com/class/kes3tr63npau8"], [1, "modal-footer", 2, "background-color", "rgb(0, 110, 201)", "color", "white"], [1, "mr-auto", 2, "text-align", "center"], ["type", "button", "id", "close-modal", "data-dismiss", "modal", 2, "display", "none"], [1, "btn", "btn-danger", 3, "href"], [1, "btn", "btn-success", 3, "href"], [1, "row", "row-cols-3", "center"], ["class", "col", 4, "ngFor", "ngForOf"], [1, "col"], ["width", "100%", "height", "250", 3, "src"], ["width", "500", "height", "300", 3, "src"]], template: function ModalComponent_Template(rf, ctx) { if (rf & 1) {
+ModalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ModalComponent, selectors: [["app-modal"]], decls: 23, vars: 6, consts: [["id", "myModal", 1, "modal", "fade"], [1, "modal-dialog", "modal-xl"], [1, "modal-content"], [1, "modal-header", 2, "background-color", "rgb(57, 61, 65)", "color", "white"], [1, "modal-title"], ["type", "button", 1, "close", 3, "click"], ["id", "modal-body", 1, "modal-body"], [4, "ngIf"], ["class", "btn btn-danger", 3, "href", 4, "ngIf"], [4, "ngIf", "ngIfElse"], ["lengthe", ""], ["href", "https://piazza.com/class/kes3tr63npau8"], [1, "modal-footer", 2, "background-color", "rgb(57, 61, 65)", "color", "white"], [1, "mr-auto", 2, "text-align", "center"], ["type", "button", "id", "close-modal", "data-dismiss", "modal", 2, "display", "none"], [1, "btn", "btn-danger", 3, "href"], [1, "btn", "btn-success", 3, "href"], [1, "row", "row-cols-3", "center"], ["class", "col", 4, "ngFor", "ngForOf"], [1, "col"], ["width", "100%", "height", "250", 3, "src"], ["width", "500", "height", "300", 3, "src"]], template: function ModalComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -742,11 +745,11 @@ ModalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.course.name);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.course.text.length > 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.course.text.length > 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.course.pgd.length > 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.course.pgd.length > 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.course.pgdex.length > 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.course.pgdex.length > 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.course.videourl[1].length >= 2)("ngIfElse", _r4);
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"]], pipes: [_course_details_safepipe__WEBPACK_IMPORTED_MODULE_4__["SafePipe"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtb2RhbC5jb21wb25lbnQuY3NzIn0= */"] });
@@ -976,61 +979,56 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CourseComponent", function() { return CourseComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var _courses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../courses */ "6uvU");
-/* harmony import */ var _modal_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modal.service */ "MvpR");
-/* harmony import */ var _modal_modal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modal/modal.component */ "XwkG");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var _modal_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modal.service */ "MvpR");
+/* harmony import */ var _modal_modal_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../modal/modal.component */ "XwkG");
 
 
 
 
 
-// This lets me use jquery
-// declare var $: any;
-// declare let $: any;
+
 class CourseComponent {
+    // onDragEnded(event) {
+    //   let element = event.source.getRootElement();
+    //   let boundingClientRect = element.getBoundingClientRect();
+    //   let parentPosition = this.getPosition(element);
+    //   console.log('x: ' + (boundingClientRect.x - parentPosition.left), 'y: ' + (boundingClientRect.y - parentPosition.top));
+    // }
+    // getPosition(el) {
+    //   let x = 0;
+    //   let y = 0;
+    //   while(el && !isNaN(el.offsetLeft) && !isNaN(el.offsetTop)) {
+    //     x += el.offsetLeft - el.scrollLeft;
+    //     y += el.offsetTop - el.scrollTop;
+    //     el = el.offsetParent;
+    //   }
+    //   return { top: y, left: x };
+    // }
     constructor(modalService) {
         this.modalService = modalService;
         this.courses = _courses__WEBPACK_IMPORTED_MODULE_1__["courses"];
-        // netImage:any = "../assets/Python 安裝與工作環境.png";
-        this.netImage = "https://raw.githubusercontent.com/acer1456/pythoncourse/gh-pages/assets/done.png";
-    }
-    onDragEnded(event) {
-        let element = event.source.getRootElement();
-        let boundingClientRect = element.getBoundingClientRect();
-        let parentPosition = this.getPosition(element);
-        console.log('x: ' + (boundingClientRect.x - parentPosition.left), 'y: ' + (boundingClientRect.y - parentPosition.top));
-    }
-    getPosition(el) {
-        let x = 0;
-        let y = 0;
-        while (el && !isNaN(el.offsetLeft) && !isNaN(el.offsetTop)) {
-            x += el.offsetLeft - el.scrollLeft;
-            y += el.offsetTop - el.scrollTop;
-            el = el.offsetParent;
-        }
-        return { top: y, left: x };
+        this.netImage = "assets/done.png";
     }
     getCourse(gcourses) {
         this.modalService.getTabVal(gcourses);
     }
-    // ngAfterViewInit(): void {
+    // ngAfterContentInit(): void {
     //   $('img[usemap]').rwdImageMaps();
     // }
     // ngOnChanges(): void {
     //   $('img[usemap]').rwdImageMaps();
     // }
     ngOnInit() {
-        // const script = this.renderer.createElement('script');
-        // script.src = `http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js`;
-        // this.renderer.appendChild(document.head, script);
-        // $(document).ready(function(e) {
-        $('img[usemap]').ready(() => {
-            $('img[usemap]').rwdImageMaps();
+        this.updateSubscription = Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["interval"])(100).subscribe((val) => {
+            $('img[usemap]').ready(() => {
+                $('img[usemap]').rwdImageMaps();
+            });
         });
-        // });
     }
 }
-CourseComponent.ɵfac = function CourseComponent_Factory(t) { return new (t || CourseComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_modal_service__WEBPACK_IMPORTED_MODULE_2__["ModalService"])); };
-CourseComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CourseComponent, selectors: [["app-course"]], decls: 22, vars: 1, consts: [["alt", "Workplace", "usemap", "#image-map", 2, "width", "fit-content", 3, "src"], ["name", "image-map"], ["target", "", "alt", "\u6B63\u898F", "title", "\u6B63\u898F", "href", "", "coords", "1168,168,1504,280", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u8868\u683C", "title", "\u8868\u683C", "href", "", "coords", "415,402,837,514", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u722C\u87F2", "title", "\u722C\u87F2", "href", "", "coords", "913,402,1211,512", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u65B7\u8A5E", "title", "\u65B7\u8A5E", "href", "", "coords", "1259,397,1697,509", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u4E3B\u984C\u5206\u6790", "title", "\u4E3B\u984C\u5206\u6790", "href", "", "coords", "1768,407,2089,514", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u975E\u76E3\u7763", "title", "\u975E\u76E3\u7763", "href", "", "coords", "2168,412,2648,524", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u7E6A\u5716", "title", "\u7E6A\u5716", "href", "", "coords", "211,682,585,786", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "Numpy", "title", "Numpy", "href", "", "coords", "679,677,1091,781", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u7D22\u5F15", "title", "\u7D22\u5F15", "href", "", "coords", "1214,677,1621,786", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u5B57\u8A5E\u5411\u91CF", "title", "\u5B57\u8A5E\u5411\u91CF", "href", "", "coords", "1725,682,2196,786", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u60C5\u611F", "title", "\u60C5\u611F", "href", "", "coords", "2483,672,2804,781", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u6A94\u6848", "title", "\u6A94\u6848", "href", "", "coords", "71,942,412,1041", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u908F\u8F2F", "title", "\u908F\u8F2F", "href", "", "coords", "570,939,1002,1041", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u5171\u73FE\u6027", "title", "\u5171\u73FE\u6027", "href", "", "coords", "1137,942,1491,1044", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u8A9E\u610F\u5206\u6790", "title", "\u8A9E\u610F\u5206\u6790", "href", "", "coords", "1580,937,2091,1049", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u76E3\u7763\u5B78\u7FD2", "title", "\u76E3\u7763\u5B78\u7FD2", "href", "", "coords", "2175,932,2610,1038", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u5B89\u88DD\u74B0\u5883", "title", "\u5B89\u88DD\u74B0\u5883", "href", "", "coords", "310,1143,702,1288", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"]], template: function CourseComponent_Template(rf, ctx) { if (rf & 1) {
+CourseComponent.ɵfac = function CourseComponent_Factory(t) { return new (t || CourseComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_modal_service__WEBPACK_IMPORTED_MODULE_3__["ModalService"])); };
+CourseComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CourseComponent, selectors: [["app-course"]], decls: 22, vars: 1, consts: [["alt", "Workplace", "usemap", "#image-map", 3, "src"], ["name", "image-map"], ["target", "", "alt", "\u6B63\u898F", "title", "\u6B63\u898F", "href", "", "coords", "1168,168,1504,280", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u8868\u683C", "title", "\u8868\u683C", "href", "", "coords", "415,402,837,514", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u722C\u87F2", "title", "\u722C\u87F2", "href", "", "coords", "913,402,1211,512", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u65B7\u8A5E", "title", "\u65B7\u8A5E", "href", "", "coords", "1259,397,1697,509", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u4E3B\u984C\u5206\u6790", "title", "\u4E3B\u984C\u5206\u6790", "href", "", "coords", "1768,407,2089,514", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u975E\u76E3\u7763", "title", "\u975E\u76E3\u7763", "href", "", "coords", "2168,412,2648,524", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u7E6A\u5716", "title", "\u7E6A\u5716", "href", "", "coords", "211,682,585,786", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "Numpy", "title", "Numpy", "href", "", "coords", "679,677,1091,781", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u7D22\u5F15", "title", "\u7D22\u5F15", "href", "", "coords", "1214,677,1621,786", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u5B57\u8A5E\u5411\u91CF", "title", "\u5B57\u8A5E\u5411\u91CF", "href", "", "coords", "1725,682,2196,786", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u60C5\u611F", "title", "\u60C5\u611F", "href", "", "coords", "2483,672,2804,781", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u6A94\u6848", "title", "\u6A94\u6848", "href", "", "coords", "71,942,412,1041", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u908F\u8F2F", "title", "\u908F\u8F2F", "href", "", "coords", "570,939,1002,1041", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u5171\u73FE\u6027", "title", "\u5171\u73FE\u6027", "href", "", "coords", "1137,942,1491,1044", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u8A9E\u610F\u5206\u6790", "title", "\u8A9E\u610F\u5206\u6790", "href", "", "coords", "1580,937,2091,1049", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u76E3\u7763\u5B78\u7FD2", "title", "\u76E3\u7763\u5B78\u7FD2", "href", "", "coords", "2175,932,2610,1038", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"], ["target", "", "alt", "\u5B89\u88DD\u74B0\u5883", "title", "\u5B89\u88DD\u74B0\u5883", "href", "", "coords", "310,1143,702,1288", "data-target", "#myModal", "data-toggle", "modal", "shape", "rect", 2, "cursor", "pointer", 3, "click"]], template: function CourseComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "img", 0);
@@ -1091,7 +1089,7 @@ CourseComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", ctx.netImage, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
-    } }, directives: [_modal_modal_component__WEBPACK_IMPORTED_MODULE_3__["ModalComponent"]], styles: [".center[_ngcontent-%COMP%]{\n  text-align: center;\n}\n.color[_ngcontent-%COMP%]{\ncolor: black;\n}\n.card[_ngcontent-%COMP%] {\n  \n  background:#fff;\n  box-shadow:0 10px 20px rgba(0,0,0,.1);\n  border-radius:10px;\n  transition:0.5s;\n}\n.card[_ngcontent-%COMP%]:hover {\n  box-shadow:0 20px 40px rgba(0,0,0,.2);\n}\nimg[_ngcontent-%COMP%] {\n  position: relative;\n  }\n.imgA1[_ngcontent-%COMP%] {\n  position: absolute;\n}\n\n\nimg[usemap][_ngcontent-%COMP%] {\n  border: none;\n  height: auto;\n  max-width: 100%;\n  width: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvdXJzZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0FBQ3BCO0FBQ0E7QUFDQSxZQUFZO0FBQ1o7QUFDQTtFQUNFLG9DQUFvQztFQUNwQyxlQUFlO0VBQ2YscUNBQXFDO0VBQ3JDLGtCQUFrQjtFQUNsQixlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxxQ0FBcUM7QUFDdkM7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQjtBQUVGO0VBQ0Usa0JBQWtCO0FBQ3BCO0FBRUE7Ozs7Ozs7Ozs7Ozs7OztHQWVHO0FBRUg7Ozs7Ozs7R0FPRztBQUVIO0VBQ0UsWUFBWTtFQUNaLFlBQVk7RUFDWixlQUFlO0VBQ2YsV0FBVztBQUNiIiwiZmlsZSI6ImNvdXJzZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNlbnRlcntcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLmNvbG9ye1xuY29sb3I6IGJsYWNrO1xufVxuLmNhcmQge1xuICAvKiB0cmFuc2Zvcm06dHJhbnNsYXRlKC01MCUsLTUwJSk7ICovXG4gIGJhY2tncm91bmQ6I2ZmZjtcbiAgYm94LXNoYWRvdzowIDEwcHggMjBweCByZ2JhKDAsMCwwLC4xKTtcbiAgYm9yZGVyLXJhZGl1czoxMHB4O1xuICB0cmFuc2l0aW9uOjAuNXM7XG59XG4uY2FyZDpob3ZlciB7XG4gIGJveC1zaGFkb3c6MCAyMHB4IDQwcHggcmdiYSgwLDAsMCwuMik7XG59XG5cbmltZyB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgfVxuXG4uaW1nQTEge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG59XG5cbi8qIC5maWx0ZXJ7XG4gIGZpbHRlcjpkcm9wLXNoYWRvdygwcHggMHB4IDEwcHggcmdiYSgwLDAsMCwuNSkpIDtcbiAgYmFja2dyb3VuZDogdXJsKFwiaHR0cHM6Ly9naXRodWIuY29tL2FjZXIxNDU2L3B5dGhvbmNvdXJzZS9ibG9iL2doLXBhZ2VzL2Fzc2V0cy9QeXRob24lMjAlRTUlQUUlODklRTglQTMlOUQlRTglODglODclRTUlQjclQTUlRTQlQkQlOUMlRTclOTIlQjAlRTUlQTIlODMucG5nP3Jhdz10cnVlXCIpIGNlbnRlciBjZW50ZXIgbm8tcmVwZWF0O1xuICBwb3NpdGlvbjpmaXhlZDtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xuICB3aWR0aDoxMDAlO1xuICBoZWlnaHQ6MTAwJTtcbiAgei1pbmRleDotMTA7XG4gIHpvb206IDE7XG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gIGJhY2tncm91bmQtc2l6ZTpjb3ZlcjtcbiAgLXdlYmtpdC1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAtby1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXIgMDtcbn0gKi9cblxuLyogQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA1OTBweCkge1xuICAuZmlsdGVye1xuICAgIGZpbHRlcjpkcm9wLXNoYWRvdygwcHggMHB4IDEwcHggcmdiYSgwLDAsMCwuNSkpIDtcbiAgICBiYWNrZ3JvdW5kOiB1cmwoXCIvLi4vYXNzZXRzL1B5dGhvbiDlronoo53oiIflt6XkvZznkrDlooMucG5nXCIpIGNlbnRlciBjZW50ZXIgbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQ6IHVybChcImh0dHBzOi8vZ2l0aHViLmNvbS9hY2VyMTQ1Ni9weXRob25jb3Vyc2UvYmxvYi9naC1wYWdlcy9hc3NldHMvUHl0aG9uJTIwJUU1JUFFJTg5JUU4JUEzJTlEJUU4JTg4JTg3JUU1JUI3JUE1JUU0JUJEJTlDJUU3JTkyJUIwJUU1JUEyJTgzLnBuZz9yYXc9dHJ1ZVwiKSBjZW50ZXIgY2VudGVyIG5vLXJlcGVhdDtcbiAgICBoZWlnaHQ6MTAwJTtcbiAgfVxufSAqL1xuXG5pbWdbdXNlbWFwXSB7XG4gIGJvcmRlcjogbm9uZTtcbiAgaGVpZ2h0OiBhdXRvO1xuICBtYXgtd2lkdGg6IDEwMCU7XG4gIHdpZHRoOiBhdXRvO1xufVxuIl19 */"] });
+    } }, directives: [_modal_modal_component__WEBPACK_IMPORTED_MODULE_4__["ModalComponent"]], styles: [".center[_ngcontent-%COMP%]{\n  text-align: center;\n}\n.color[_ngcontent-%COMP%]{\ncolor: black;\n}\n.card[_ngcontent-%COMP%] {\n  \n  background:#fff;\n  box-shadow:0 10px 20px rgba(0,0,0,.1);\n  border-radius:10px;\n  transition:0.5s;\n}\n.card[_ngcontent-%COMP%]:hover {\n  box-shadow:0 20px 40px rgba(0,0,0,.2);\n}\nimg[_ngcontent-%COMP%] {\n  position: relative;\n  }\n.imgA1[_ngcontent-%COMP%] {\n  position: absolute;\n}\n\n\nimg[usemap][_ngcontent-%COMP%] {\n  border: none;\n  height: auto;\n  max-width: 100%;\n  width: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvdXJzZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0FBQ3BCO0FBQ0E7QUFDQSxZQUFZO0FBQ1o7QUFDQTtFQUNFLG9DQUFvQztFQUNwQyxlQUFlO0VBQ2YscUNBQXFDO0VBQ3JDLGtCQUFrQjtFQUNsQixlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxxQ0FBcUM7QUFDdkM7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQjtBQUVGO0VBQ0Usa0JBQWtCO0FBQ3BCO0FBRUE7Ozs7Ozs7Ozs7Ozs7OztHQWVHO0FBRUg7Ozs7Ozs7R0FPRztBQUVIO0VBQ0UsWUFBWTtFQUNaLFlBQVk7RUFDWixlQUFlO0VBQ2YsV0FBVztBQUNiIiwiZmlsZSI6ImNvdXJzZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNlbnRlcntcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLmNvbG9ye1xuY29sb3I6IGJsYWNrO1xufVxuLmNhcmQge1xuICAvKiB0cmFuc2Zvcm06dHJhbnNsYXRlKC01MCUsLTUwJSk7ICovXG4gIGJhY2tncm91bmQ6I2ZmZjtcbiAgYm94LXNoYWRvdzowIDEwcHggMjBweCByZ2JhKDAsMCwwLC4xKTtcbiAgYm9yZGVyLXJhZGl1czoxMHB4O1xuICB0cmFuc2l0aW9uOjAuNXM7XG59XG4uY2FyZDpob3ZlciB7XG4gIGJveC1zaGFkb3c6MCAyMHB4IDQwcHggcmdiYSgwLDAsMCwuMik7XG59XG5cbmltZyB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgfVxuXG4uaW1nQTEge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG59XG5cbi8qIC5maWx0ZXJ7XG4gIGZpbHRlcjpkcm9wLXNoYWRvdygwcHggMHB4IDEwcHggcmdiYSgwLDAsMCwuNSkpIDtcbiAgYmFja2dyb3VuZDogdXJsKFwiaHR0cHM6Ly9naXRodWIuY29tL2FjZXIxNDU2L3B5dGhvbmNvdXJzZS9ibG9iL2doLXBhZ2VzL2Fzc2V0cy9QeXRob24lMjAlRTUlQUUlODklRTglQTMlOUQlRTglODglODclRTUlQjclQTUlRTQlQkQlOUMlRTclOTIlQjAlRTUlQTIlODMucG5nP3Jhdz10cnVlXCIpIGNlbnRlciBjZW50ZXIgbm8tcmVwZWF0O1xuICBwb3NpdGlvbjpmaXhlZDtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xuICB3aWR0aDoxMDAlO1xuICBoZWlnaHQ6MTAwJTtcbiAgei1pbmRleDotMTA7XG4gIHpvb206IDE7XG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gIGJhY2tncm91bmQtc2l6ZTpjb3ZlcjtcbiAgLXdlYmtpdC1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAtby1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXIgMDtcbn0gKi9cblxuLyogQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA1OTBweCkge1xuICAuZmlsdGVye1xuICAgIGZpbHRlcjpkcm9wLXNoYWRvdygwcHggMHB4IDEwcHggcmdiYSgwLDAsMCwuNSkpIDtcbiAgICBiYWNrZ3JvdW5kOiB1cmwoXCIvLi4vYXNzZXRzL1B5dGhvbiDlronoo53oiIflt6XkvZznkrDlooMucG5nXCIpIGNlbnRlciBjZW50ZXIgbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQ6IHVybChcImh0dHBzOi8vZ2l0aHViLmNvbS9hY2VyMTQ1Ni9weXRob25jb3Vyc2UvYmxvYi9naC1wYWdlcy9hc3NldHMvUHl0aG9uJTIwJUU1JUFFJTg5JUU4JUEzJTlEJUU4JTg4JTg3JUU1JUI3JUE1JUU0JUJEJTlDJUU3JTkyJUIwJUU1JUEyJTgzLnBuZz9yYXc9dHJ1ZVwiKSBjZW50ZXIgY2VudGVyIG5vLXJlcGVhdDtcbiAgICBoZWlnaHQ6MTAwJTtcbiAgfVxufSAqL1xuXG5pbWdbdXNlbWFwXSB7XG4gIGJvcmRlcjogbm9uZTtcbiAgaGVpZ2h0OiBhdXRvO1xuICBtYXgtd2lkdGg6IDEwMCU7XG4gIHdpZHRoOiBhdXRvO1xufVxuIl19 */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](CourseComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -1099,7 +1097,7 @@ CourseComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
                 templateUrl: './course.component.html',
                 styleUrls: ['./course.component.css']
             }]
-    }], function () { return [{ type: _modal_service__WEBPACK_IMPORTED_MODULE_2__["ModalService"] }]; }, null); })();
+    }], function () { return [{ type: _modal_service__WEBPACK_IMPORTED_MODULE_3__["ModalService"] }]; }, null); })();
 
 
 /***/ }),

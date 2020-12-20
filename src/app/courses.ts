@@ -44,9 +44,9 @@ export const courses = [
     group: 2,
     name: 'Numpy運算邏輯',
     content: '（共用模組）',
-    text: 'Numpy 是處理 Array的常用模組。安裝 Anaconda 後就會自動安裝 numpy, 不需另行安裝。Array 即一串數字，可有多層級，適合矩陣運算，Numpy 提供方便的建置工具，亦可由List 轉換為 array。Numpy 有各種針對Array的數學計算功能，補強 python list 的不足，例如平均值、變異數或矩陣運算等。',
+    text:'Numpy是處理Array的常用模組。安裝 Anaconda 後就會自動安裝 numpy, 不需另行安裝。Array 即一串數字，可有多層級，適合矩陣運算，Numpy 提供方便的建置工具，亦可由List 轉換為 array。Numpy 有各種針對Array的數學計算功能，補強 python list 的不足，例如平均值、變異數或矩陣運算等。',
     videourl: ['https://www.youtube.com/embed/ShhwiqqR6c8', 'https://www.youtube.com/embed/rgHZJJqPW1c'],
-    pdg: 'https://piazza.com/redirect/s3?bucket=uploads&prefix=attach%2Fjlrqtgi8cpaej%2Fi91z715dpjc6y0%2Fk1t2m2n1r48x%2F4_Py_numpy_basic.ipynb',
+    pgd: 'https://piazza.com/redirect/s3?bucket=uploads&prefix=attach%2Fjlrqtgi8cpaej%2Fi91z715dpjc6y0%2Fk1t2m2n1r48x%2F4_Py_numpy_basic.ipynb',
     pgdex:'',
   },
   {
@@ -100,7 +100,10 @@ export const courses = [
     group: '文字處理',
     name: '索引與搜尋檢索',
     content: '（文字處理）',
-    videourl: ''
+    text: '',
+    videourl: '',
+    pgd: '',
+    pgdex: '',
   },
   {
     id: 11,

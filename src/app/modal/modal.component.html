@@ -4,7 +4,7 @@
     <div class="modal-content">
 
       <!-- Modal Header -->
-      <div class="modal-header" style="background-color: rgb(0, 110, 201); color: white;">
+      <div class="modal-header" style="background-color: rgb(57, 61, 65); color: white;">
         <h5 class="modal-title">{{course.name}}</h5>
         <button type="button" class="close" (click)="hideModal()">&times;</button>
       </div>
@@ -13,9 +13,9 @@
       <div class="modal-body" id='modal-body'>
 
         <!-- <p>{{ course.content }}</p> -->
-        <p *ngIf="course.text.length > 0;">{{ course.text }}</p>
-        <a *ngIf="course.pgd.length > 0;" class="btn btn-danger" href="{{ course.pgd }}">程式範例</a>
-        <span *ngIf="course.pgdex.length > 0;"> 、 <a class="btn btn-success" href="{{ course.pgdex }}">範例檔案</a></span>
+        <p *ngIf="course.text.length > 1;">{{ course.text }}</p>
+        <a *ngIf="course.pgd.length > 1;" class="btn btn-danger" href="{{ course.pgd }}">程式範例</a>
+        <span *ngIf="course.pgdex.length > 1;"> 、 <a class="btn btn-success" href="{{ course.pgdex }}">範例檔案</a></span>
         <br><br>
         <div *ngIf="course.videourl[1].length >= 2; else lengthe">
         <!-- <h4>教學影片連結：</h4> -->
@@ -35,7 +35,7 @@
 
         <!-- Modal footer -->
         <a href="https://piazza.com/class/kes3tr63npau8">
-          <div class="modal-footer" style="background-color: rgb(0, 110, 201); color: white;">
+          <div class="modal-footer" style="background-color: rgb(57, 61, 65); color: white;">
             <p class="mr-auto" style="text-align: center;">登入Piazza查看討論區</p>
             <!-- <button type="button" class="btn btn-primary" (click)="sendModal()" >Send</button> -->
             <!-- <button type="button" class="btn btn-danger" (click)="hideModal()">Close</button> -->

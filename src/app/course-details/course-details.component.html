@@ -5,7 +5,8 @@
 
       <p>{{ course.content }}</p>
       <h4>{{ course.name }}</h4>
-      <p>{{ course.text }}</p>
+      <!-- <p>{{ course.text | html}}</p> -->
+      <p [innerHTML]="course.text | newline"></p>
       <p>程式檔案下載：<a href="{{ course.pgd }}">程式</a></p>
 
       <h4>教學影片連結：</h4>

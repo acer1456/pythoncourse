@@ -13,9 +13,9 @@
       <div class="modal-body" id='modal-body'>
 
         <!-- <p>{{ course.content }}</p> -->
-        <p *ngIf="course.text.length > 1;">{{ course.text }}</p>
-        <a *ngIf="course.pgd.length > 1;" class="btn btn-danger" href="{{ course.pgd }}">程式範例</a>
-        <span *ngIf="course.pgdex.length > 1;"> 、 <a class="btn btn-success" href="{{ course.pgdex }}">範例檔案</a></span>
+        <p *ngIf="course.text.length > 1;" [innerHTML]="course.text | newline"></p>
+        <!-- <a *ngIf="course.pgd.length > 1;" class="btn btn-danger" href="{{ course.pgd }}">程式範例</a> -->
+        <!-- <span *ngIf="course.pgdex.length > 1;"> 、 <a class="btn btn-success" href="{{ course.pgdex }}">範例檔案</a></span> -->
         <br><br>
         <div *ngIf="course.videourl[1].length >= 2; else lengthe">
         <!-- <h4>教學影片連結：</h4> -->
